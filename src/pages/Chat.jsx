@@ -12,7 +12,21 @@ const Chat = () => {
       setMessages([...messages, { text: input, sender: 'user' }]);
       // Simulate AI response
       setTimeout(() => {
-        setMessages(prev => [...prev, { text: `Response to: ${input}`, sender: 'ai' }]);
+        let response = '';
+        switch (input.toLowerCase()) {
+          case 'identify the current time loop':
+            response = 'Current time loop identified: Loop #42, Duration: 24 hours';
+            break;
+          case 'change the current time loop':
+            response = 'Time loop changed. Now in Loop #43';
+            break;
+          case 'simulate outcomes across parallel timelines':
+            response = 'Simulation complete. 5 potential outcomes identified.';
+            break;
+          default:
+            response = "I'm sorry, I don't understand that command. Can you please rephrase or try a different command?";
+        }
+        setMessages(prev => [...prev, { text: response, sender: 'ai' }]);
       }, 1000);
       setInput('');
     }
