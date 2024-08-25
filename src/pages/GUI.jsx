@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
+import { Slider } from "@/components/ui/slider";
 
 const GUI = () => {
   const [timeline, setTimeline] = useState(50);
@@ -18,6 +18,9 @@ const GUI = () => {
       <h2 className="text-3xl mb-8">Timekeeper's Enigma GUI</h2>
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h3 className="text-xl mb-4">Timeline Control</h3>
+        <div className="mb-8 h-64 bg-gray-200 flex items-center justify-center">
+          <p className="text-gray-500">3D Visualization Placeholder</p>
+        </div>
         <Slider
           defaultValue={[50]}
           max={100}
