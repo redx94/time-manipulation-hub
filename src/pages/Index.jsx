@@ -5,7 +5,7 @@ import { Clock, Terminal, Layout, MessageSquare, BarChart } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-800 to-purple-900">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-800 to-purple-900 p-8">
       <Clock className="w-32 h-32 text-white mb-6 animate-pulse" />
       <h1 className="text-6xl font-bold mb-4 text-white text-center">The Timekeeper's Enigma</h1>
       <p className="text-2xl text-white mb-12 text-center max-w-2xl">
